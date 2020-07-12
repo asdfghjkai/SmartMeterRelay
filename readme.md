@@ -3,9 +3,9 @@
 
 This is a python project which allows the relay of data from a SMETS2 meter (Using the GlowMarkt API and [Glow IHD](https://shop.glowmarkt.com/products/display-and-cad-combined-for-smart-meter-customers)
 ## Requirements & Dependancies
-- Requests (pip install requests)
-- Paho MQTT (pip install paho-mqtt)
-- Influx Python Client (pip install influxdb)
+- Requests `pip install requests`
+- Paho MQTT `pip install paho-mqtt`
+- Influx Python Client `pip install influxdb`
 
 ## How To Use
 1. Clone the repo
@@ -21,3 +21,8 @@ This is a python project which allows the relay of data from a SMETS2 meter (Usi
 - Whatever else comes to mind
 - Integrated testing (CICD?)
 - Provide release execs compiled from pyinstaller
+
+## Notes:
+There is a branch for InfluxDB2 development. You will need the following library
+- Influx Client `pip install influxdb-client` - perhaps best to run `pip uninstall influxdb` first
+- If doing the above on a Windows machine - you'll also need these binaries to compile dependancies (notably ciso8601) [here](http://go.microsoft.com/fwlink/?LinkId=691126&fixForIE=.exe)
